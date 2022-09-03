@@ -98,6 +98,7 @@ def main():
     # print(text)
 
     # Define the choices for the required information and let the user select all that apply
+    # Nombre, calle y número, colonia, código postal
     choices = ["Name", "RFC", "Status"]
     required = gui_options(choices)
     print(f"Required info: {required}")
@@ -114,6 +115,11 @@ def main():
             info.append(get_info(text, "padrón"))
 
     print(f"Info retrieved: {info}")
+
+    # info_dict = dict()
+    # info_dict.keys = choices
+    # info_dict.values = info
+    # print(info_dict)
 
     # TODO: Tal vez trabajar con diccionarios? https://realpython.com/iterate-through-dictionary-python/
 
